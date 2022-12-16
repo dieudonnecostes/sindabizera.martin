@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Unbounded', cursive;
-    zoom: 1;
 }
 
 :root {
@@ -177,6 +176,10 @@ nav a {
     color: var(--green);
 }
 
+.icon-text p{
+    font-size: small;
+}
+
 
 .presentation-box {
     background-color: var(--card);
@@ -327,6 +330,34 @@ nav a {
     padding: 2rem;
 }
 
+.duo-left {
+    background-color: var(--greenWhite);
+    row-gap: 1.5rem;
+    overflow: auto;
+    min-height: fit-content;
+    max-height: fit-content;
+    height: fit-content;
+    padding: 8rem 3rem;
+    /* border-bottom-left-radius: .8rem;
+    border-top-left-radius: .8rem; */
+}
+
+.duo-yellow {
+    background-color: var(--yellowWhite);
+}
+
+.section-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* border-radius: .8rem; */
+}
+
+#contact-us .duo-left{
+    background-color: inherit;
+    padding: 0.5rem;
+}
+
 .contact-info-box {
     display: flex;
     flex-direction: column;
@@ -337,18 +368,13 @@ nav a {
 .single-contact {
     padding: .5rem 0rem;
     width: fit-content;
-    border-radius: .4rem;
+    border-radius: .4rem; 
 }
 
-
-
-.single-contact i {
-    width: 1.3rem;
-    max-width: 1.3rem;
-    min-width: 1.3rem;
-    font-size: larger;
-    color: var(--greenLight);
+.single-contact p{
+    white-space: pre-wrap;
 }
+
 
 .footer-bottom {
     padding: 2rem 1rem;
@@ -402,7 +428,7 @@ nav a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
+        padding: 3rem 1rem;
     }
 
     .duo-right {
@@ -420,7 +446,7 @@ nav a {
     }
 
     .our_services{
-        padding: 5rem 2rem;
+        padding: 5rem 1rem;
     }
 
     .three_servicees{
@@ -439,6 +465,7 @@ nav a {
         margin: 0rem 1rem;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+        padding: 3rem 1rem;
     }
 
     .nav-body {
