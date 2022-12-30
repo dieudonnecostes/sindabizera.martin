@@ -15,36 +15,11 @@
 </head>
 
 <body>
-
     <section id="home">
-        <nav>
-            <div class="nav-header">
-                <div class="social-nav">
-                    <a target="_blank" href="https://wa.me/25779925667"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a target="_blank" href="tel:+25722243406"><i class="fa fa-phone"></i></a>
-
-                </div>
-
-                <div class="social-nav contact-nav">
-                    <a href="mailto:sindabizeramartin@gmail.com" class="icon-text flex column-gap-middle mail-contact">
-                        <i class="fa fa-envelope"></i>
-                        <p>sindabizeramartin@gmail.com</p>
-                    </a>
-                    <a class="icon-text flex column-gap-middle">
-                        <i class="fa fa-clock"></i>
-                        <p>Lun - Sam 8:00' - 17:00'</p>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-body">
-                <a href="#about-us">À propos de nous</a>
-                <a href="#our-services">Nos services</a>
-                <a href="#contact-us">Contactez-nous</a>
-            </div>
-        </nav>
+        <nav id="nav"></nav>
         <div class="curtain"></div>
         <img src="https://thumbs.dreamstime.com/b/african-american-notary-contract-stamp-certificate-213589758.jpg"
-            alt="Notariat" />
+            alt="Notaire Sindabizera Martin" />
         <div class="presentation-box">
             <img src="https://media.istockphoto.com/id/1174056245/photo/some-moments-require-some-seriousness.jpg?s=612x612&w=0&k=20&c=dPqQQq6wiygApzSF9r72B9p6Bp4pygxm3M7aqC1oae8="
                 alt="Notaire Sindabizera Martin" />
@@ -52,7 +27,9 @@
             <p class="large-subtitle">Pour l'authenticité de vos actes</p>
         </div>
     </section>
-    <section id="about-us" class="large-title">Nous sommes un officier public et ministériel chargé d'authentifier les actes pour le compte de nos clients. Nous avons également un rôle dans la conservation des actes et le conseil juridique.</section>
+    <section id="about-us" class="large-title">Nous sommes un officier public et ministériel chargé d'authentifier les
+        actes pour le compte de nos clients. Nous avons également un rôle dans la conservation des actes et le conseil
+        juridique.</section>
     <section id="why-us">
         <div class="left-side">
             <h1 class="large-title">A quoi sert un notaire ?</h1>
@@ -136,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section id="our-services" class="our_services">
+    <!-- <section id="our-services" class="our_services">
         <div class="heading_section">
             <h1 class="large-title">Nos services</h1>
             <h4 class="wave_line">------------</h4>
@@ -169,9 +146,9 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="contact-us">
-        <div class="heading_section">
+        <div id="contact-us-header" class="heading_section">
             <h1 class="large-title">Contactez-nous</h1>
             <h4 class="wave_line">--------------------------------</h4>
             <p class="p-medium">Pour plus d'informations. Veuillez nous contacter sur les contacts donnés ou nous
@@ -185,7 +162,7 @@
                         <div id="icon">
                             <i class="fa fa-phone"></i>
                         </div>
-                        <p><a href="tel:+25722243406">+257 22 24 34 06</a>, <a href="tel:+25779926567">+257 79 92 65 67</a></p>
+                        <p><a href="tel:+25722243406">+257 22243406</a>, <a href="tel:+25779926567">+257 79926567</a></p>
                     </div>
                     <div class="single-contact flex-row column-gap-middle">
                         <div id="icon">
@@ -208,9 +185,14 @@
             </div>
         </div>
     </section>
-    <div class="footer-bottom">
+    <div class="footer-bottom" id="footer-closure">
         <p>© Notaire Martin Sindabizera. Tous les droits sont réservés</p>
         <p>Réalisation par <a href="https://dieudonnecostes.github.io/" target="_blank">Dieudonné Assumani</a></p>
+    </div>
+    <script src="./js/logic.js" type="module"></script>
+    <div id="lng-manager">
+        <p id="fr-lng">Français</p>
+        <p id="en-lng">English</p>
     </div>
 </body>
 
