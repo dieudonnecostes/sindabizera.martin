@@ -27,7 +27,7 @@ export const NavBar = (locale, homePath) => {
             <a href='${homePath}#contact-us' onclick="handleCloseSideMenu()">${{
                 fr: "Contactez-nous", en: "Contact Us"
             }[locale]}</a>
-            <a class="buttoned-link" href="https://www.google.com/maps?ll=-3.387668,29.362155&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q=Ave+De+La+Revolution+Bujumbura" target="_blank">${{
+            <a class="buttoned-link" href="https://www.google.com/maps?ll=-3.3863150,29.3620673&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q=Ave+De+La+Revolution+Bujumbura" target="_blank">${{
                 fr: "ADDRESSE DU BUREAU", en: "OFFICE LOCATION"
             }[locale]}</a>
         </div>
