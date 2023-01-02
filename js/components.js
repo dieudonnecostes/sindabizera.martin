@@ -24,8 +24,12 @@ export const NavBar = (locale, homePath) => {
         }[locale]}</a>
                 </div>
             </div>
-            <a href='${homePath}#contact-us' onclick="handleCloseSideMenu()">Contactez-nous</a>
-            <a class="buttoned-link" href="https://www.google.com/maps?ll=-3.387668,29.362155&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q=Ave+De+La+Revolution+Bujumbura" target="_blank">OFFICE LOCATION</a>
+            <a href='${homePath}#contact-us' onclick="handleCloseSideMenu()">${{
+                fr: "Contactez-nous", en: "Contact Us"
+            }[locale]}</a>
+            <a class="buttoned-link" href="https://www.google.com/maps?ll=-3.387668,29.362155&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q=Ave+De+La+Revolution+Bujumbura" target="_blank">${{
+                fr: "ADDRESSE DU BUREAU", en: "OFFICE LOCATION"
+            }[locale]}</a>
         </div>
         <div id="nav-icon">
             <i id="menu-icon-button" class="fa fa-bars action-icon" onclick="handleBarButton()"></i>
@@ -37,10 +41,7 @@ export const Box = (locale, homePath) => {
     return `
     <img src="https://media.istockphoto.com/id/1174056245/photo/some-moments-require-some-seriousness.jpg?s=612x612&w=0&k=20&c=dPqQQq6wiygApzSF9r72B9p6Bp4pygxm3M7aqC1oae8="
     alt="Notaire Sindabizera Martin" />
-    <h1 class="headline1">${{
-            fr: "Notaire",
-            en: "Notary",
-        }[locale]} Martin Sindabizera</h1>
+    <h1 class="headline1">Martin Sindabizera</h1>
     <p class="large-subtitle">${{
             fr: "Pour l'authenticité de vos actes",
             en: "For the authenticity of your deeds",

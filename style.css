@@ -335,7 +335,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    opacity: 0.75;
+    opacity: 0.65;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
