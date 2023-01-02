@@ -2,26 +2,26 @@ export const NavBar = (locale, homePath) => {
     return `
         <a href='${homePath}' class="logo-named">
             <h1 class="large-subtitle logoName">${{
-                fr:"Notaire", en:"Notary"
-            }[locale]} Martin Sindabzera</h1>
+            fr: "Notaire", en: "Notary"
+        }[locale]} Martin Sindabzera</h1>
         </a>
         <div class="navbar-actions flex">
             <div class="contextual-arrow" id="c-m-about">
                 <a>${{
-                    fr:"À propos de nous", en:"About Us"
-                }[locale]}
+            fr: "À propos de nous", en: "About Us"
+        }[locale]}
                 <i class="fa fa-caret-down"></i>
                 </a>
                 <div class="contextual-menu">
                     <a href="${homePath}#why-us" onclick="handleCloseSideMenu()">${{
-                        fr:"Que fait un notaire ?", en:"What does a notary do?"
-                    }[locale]}</a>
+            fr: "Que fait un notaire ?", en: "What does a notary do?"
+        }[locale]}</a>
                     <a href="${homePath}#when-us" onclick="handleCloseSideMenu()">${{
-                        fr:"Quand faire appel à un notaire ?", en:"When to call a notary?"
-                    }[locale]}</a>
+            fr: "Quand faire appel à un notaire ?", en: "When to call a notary?"
+        }[locale]}</a>
                     <a href="${homePath}#our-services" onclick="handleCloseSideMenu()">${{
-                        fr:"Nos services", en:"Our services"
-                    }[locale]}</a>
+            fr: "Nos services", en: "Our services"
+        }[locale]}</a>
                 </div>
             </div>
             <a href='${homePath}#contact-us' onclick="handleCloseSideMenu()">Contactez-nous</a>
@@ -147,7 +147,6 @@ export const WhyUs = (locale, homePath) => {
     `
 }
 
-
 export const WhenUs = (locale, homePath) => {
     return `
     <div class="when-us-header">
@@ -229,5 +228,60 @@ export const Footer = (locale, homePath) => {
             fr: "Réalisation par",
             en: "Realization by",
         }[locale]} <a href="https://dieudonnecostes.github.io/" target="_blank">Dieudonné Assumani</a></p>
+    `;
+}
+
+export const OurServices = (locale, homePath) => {
+    return `
+    <div class="heading_section">
+    <h1 class="large-title">${{
+        fr: "Nos services",
+        en: "Our services",
+    }[locale]}</h1>
+    <h4 class="wave_line">------------</h4>
+</div>
+<div class="three_servicees">
+<div class="one_services">
+<div id="icon">
+    <i class="fa fa-stamp"></i>
+</div>
+<h2 class="p-medium">${{
+            fr: "Authentification",
+            en: "Authentication",
+        }[locale]}</h2>
+<p>${{
+            fr: "Nous authentifions les actes que nous établissons. En apposant notre sceau et notre propre signature, nous reconnaissons officiellement la volonté exprimée par les personnes qui les signent.",
+            en: "We authenticate the deeds that we establish. By affixing our seal and our own signature, we officially recognize the will expressed by the people who sign them.",
+        }[locale]}</p>
+</div>
+<div class="one_services">
+<div id="icon">
+    <i class="fa fa-lightbulb"></i>
+</div>
+<h2 class="p-medium">${{
+            fr: "Conseil",
+            en: "Advice",
+        }[locale]}</h2>
+<p>${{
+            fr: "Nous avons l'obligation de conseiller nos clients. Nous leur fournissons une information complète et leur offrons les moyens les plus appropriés pour atteindre le résultat souhaité. Nous sommes impartiaux et nous plaçons l'intérêt du client avant notre propre intérêt.",
+            en: "We have an obligation to advise our clients. We provide them with complete information and offer them the most appropriate means to achieve the desired result. We are impartial and we put the interest of the client before our own interest.",
+        }[locale]}</p>
+</div>
+<div class="one_services">
+<div id="icon">
+    <i class="fa fa-box-archive"></i>
+</div>
+<h2 class="p-medium">${{
+    fr: "Conservation",
+    en: "Conservation",
+}[locale]}</h2>
+<p>${{
+    fr: "Nous assurons la conservation des documents (par exemple, un testament) au siège de notre cabinet.",
+    en: "We ensure the preservation of documents (for example, a will) at the registered office of our firm.",
+}[locale]}
+</p>
+</div>
+</div>
+</div>
     `;
 }
