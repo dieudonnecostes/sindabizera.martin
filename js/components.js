@@ -3,7 +3,7 @@ export const NavBar = (locale, homePath) => {
         <a href='${homePath}' class="logo-named">
             <h1 class="large-subtitle logoName">${{
             fr: "Notaire", en: "Notary"
-        }[locale]} Martin Sindabzera</h1>
+        }[locale]} Martin Sindabizera</h1>
         </a>
         <div class="navbar-actions flex">
             <div class="contextual-arrow" id="c-m-about">
