@@ -1,37 +1,35 @@
 export const NavBar = (locale, homePath) => {
     return `
-    <div class="nav-header">
-    <div class="social-nav">
-        <a target="_blank" href="https://wa.me/25779925667"><i class="fa-brands fa-whatsapp"></i></a>
-        <a target="_blank" href="tel:+25722243406"><i class="fa fa-phone"></i></a>
-
-    </div>
-
-    <div class="social-nav contact-nav">
-        <a href="mailto:sindabizeramartin@gmail.com" class="icon-text flex column-gap-middle mail-contact">
-            <i class="fa fa-envelope"></i>
-            <p>sindabizeramartin@gmail.com</p>
+        <a href='${homePath}' class="logo-named">
+            <h1 class="large-subtitle logoName">${{
+                fr:"Notaire", en:"Notary"
+            }[locale]} Martin Sindabzera</h1>
         </a>
-        <a class="icon-text flex column-gap-middle">
-            <i class="fa fa-clock"></i>
-            <p>Lun - Sam 8:00' - 17:00'</p>
-        </a>
-    </div>
-</div>
-<div class="nav-body">
-    <a href="#about-us">${{
-            fr: "À propos de nous",
-            en: "About Us",
-        }[locale]}</a>
-    <a href="#our-services">${{
-            fr: "Nos services",
-            en: "Our services",
-        }[locale]}</a>
-    <a href="#contact-us">${{
-            fr: "Contactez-nous",
-            en: "Contact us",
-        }[locale]}</a>
-</div>
+        <div class="navbar-actions flex">
+            <div class="contextual-arrow" id="c-m-about">
+                <a>${{
+                    fr:"À propos de nous", en:"About Us"
+                }[locale]}
+                <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="contextual-menu">
+                    <a href="${homePath}#why-us" onclick="handleCloseSideMenu()">${{
+                        fr:"Que fait un notaire ?", en:"What does a notary do?"
+                    }[locale]}</a>
+                    <a href="${homePath}#when-us" onclick="handleCloseSideMenu()">${{
+                        fr:"Quand faire appel à un notaire ?", en:"When to call a notary?"
+                    }[locale]}</a>
+                    <a href="${homePath}#our-services" onclick="handleCloseSideMenu()">${{
+                        fr:"Nos services", en:"Our services"
+                    }[locale]}</a>
+                </div>
+            </div>
+            <a href='${homePath}#contact-us' onclick="handleCloseSideMenu()">Contactez-nous</a>
+            <a class="buttoned-link" href="https://www.google.com/maps?ll=-3.387668,29.362155&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q=Ave+De+La+Revolution+Bujumbura" target="_blank">OFFICE LOCATION</a>
+        </div>
+        <div id="nav-icon">
+            <i id="menu-icon-button" class="fa fa-bars action-icon" onclick="handleBarButton()"></i>
+        </div>
     `;
 }
 
@@ -228,8 +226,8 @@ export const Footer = (locale, homePath) => {
             en: "© Notary Martin Sindabizera. All rights reserved",
         }[locale]}</p>
     <p>${{
-        fr: "Réalisation par",
-        en: "Realization by",
-    }[locale]} <a href="https://dieudonnecostes.github.io/" target="_blank">Dieudonné Assumani</a></p>
+            fr: "Réalisation par",
+            en: "Realization by",
+        }[locale]} <a href="https://dieudonnecostes.github.io/" target="_blank">Dieudonné Assumani</a></p>
     `;
 }

@@ -12,6 +12,7 @@ function innerHTML(key, html) {
 
 function insertTemplates({ locale = 'fr' }) {
     innerHTML('#nav', NavBar(locale, homePath));
+    innerHTML('.navbar', NavBar(locale, homePath));
     innerHTML('.presentation-box', Box(locale, homePath));
     innerHTML('#about-us', AboutUs(locale, homePath));
     innerHTML('#why-us', WhyUs(locale, homePath));
