@@ -963,7 +963,13 @@ nav a {
     }
 
     .contact-info-bar{
-        column-gap: .8rem;
+        column-gap: .5rem;
+        justify-content: flex-start;
+        padding: .5rem 2rem;
+    }
+
+    .time-indicator i{
+        display: none;
     }
 
     .side-menu {
