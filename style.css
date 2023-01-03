@@ -455,7 +455,7 @@ nav a {
     align-items: center;
     padding: 5rem;
     row-gap: 2rem;
-    background-color: var(--card);
+    background-color: var(--bgColor);
 }
 
 #icon {
@@ -527,6 +527,7 @@ nav a {
     width: fit-content;
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--card);
 }
 
 #contact-us {
@@ -781,6 +782,21 @@ nav a {
     max-height: 1rem;
 }
 
+.img-right{
+    height: 20rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: fill;
+}
+
+.notaire-img{
+    object-fit: cover;
+}
+
+#resume{
+    background-color: var(--card);
+}
 
 
 @media screen and (max-width : 1024px) {
@@ -940,6 +956,10 @@ nav a {
 
     .wave_line{
         display: none;
+    }
+
+    .contact-info-bar{
+        column-gap: .8rem;
     }
 
     .side-menu {

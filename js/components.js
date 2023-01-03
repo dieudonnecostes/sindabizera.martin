@@ -25,11 +25,11 @@ export const NavBar = (locale, homePath) => {
                 </div>
             </div>
             <a href='${homePath}#contact-us' onclick="handleCloseSideMenu()">${{
-                fr: "Contactez-nous", en: "Contact Us"
-            }[locale]}</a>
+            fr: "Contactez-nous", en: "Contact Us"
+        }[locale]}</a>
             <a class="buttoned-link" href="https://www.google.com/maps?ll=-3.3863150,29.3620673&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q=Ave+De+La+Revolution+Bujumbura" target="_blank">${{
-                fr: "ADDRESSE DU BUREAU", en: "OFFICE LOCATION"
-            }[locale]}</a>
+            fr: "ADDRESSE DU BUREAU", en: "OFFICE LOCATION"
+        }[locale]}</a>
         </div>
         <div id="nav-icon">
             <i id="menu-icon-button" class="fa fa-bars action-icon" onclick="handleBarButton()"></i>
@@ -39,7 +39,7 @@ export const NavBar = (locale, homePath) => {
 
 export const Box = (locale, homePath) => {
     return `
-    <img src="https://media.istockphoto.com/id/1174056245/photo/some-moments-require-some-seriousness.jpg?s=612x612&w=0&k=20&c=dPqQQq6wiygApzSF9r72B9p6Bp4pygxm3M7aqC1oae8="
+    <img src="https://dpictures.s3.amazonaws.com/pv-d/20230103_105622.jpg"
     alt="Notaire Sindabizera Martin" />
     <h1 class="headline1">Martin Sindabizera</h1>
     <p class="large-subtitle">${{
@@ -236,9 +236,9 @@ export const OurServices = (locale, homePath) => {
     return `
     <div class="heading_section">
     <h1 class="large-title">${{
-        fr: "Nos services",
-        en: "Our services",
-    }[locale]}</h1>
+            fr: "Nos services",
+            en: "Our services",
+        }[locale]}</h1>
     <h4 class="wave_line">------------</h4>
 </div>
 <div class="three_servicees">
@@ -273,16 +273,62 @@ export const OurServices = (locale, homePath) => {
     <i class="fa fa-box-archive"></i>
 </div>
 <h2 class="p-medium">${{
-    fr: "Conservation",
-    en: "Conservation",
-}[locale]}</h2>
+            fr: "Conservation",
+            en: "Conservation",
+        }[locale]}</h2>
 <p>${{
-    fr: "Nous assurons la conservation des documents (par exemple, un testament) au siège de notre cabinet.",
-    en: "We ensure the preservation of documents (for example, a will) at the registered office of our firm.",
-}[locale]}
+            fr: "Nous assurons la conservation des documents (par exemple, un testament) au siège de notre cabinet.",
+            en: "We ensure the preservation of documents (for example, a will) at the registered office of our firm.",
+        }[locale]}
 </p>
 </div>
 </div>
+</div>
+    `;
+}
+
+export const Resume = (locale, homePath) => {
+    return `
+    <div class="duo">
+    <div class="duo-left">
+        <img class="img-right notaire-img" alt="Photo du Notaire Martin SIndabizera" src="https://dpictures.s3.amazonaws.com/pv-d/20230103_105622.jpg"/>
+    </div>
+    <div class="duo-right">
+        <h1 class="large-title">${{
+            fr: "Avant de devenir notaire",
+            en: "Before becoming a notary",
+        }[locale]},</h1>
+        <br/>
+        <p class="large-subtitle">${{
+            fr: "Monsieur Martin SINDABIZERA a occupé les postes suivants",
+            en: "Mr. Martin SINDABIZERA held the following positions",
+        }[locale]}:</p>
+        <br/><br/>
+        <p class="p-medium">◉ ${{
+            fr: "Magistrat à la Mairie de Bujumbura",
+            en: "Magistrate in Bujumbura City Hall",
+        }[locale]}</p>
+        <br/>
+        <p class="p-medium">◉ ${{
+            fr: "Secrétaire Général de la Mairie de Bujumbura",
+            en: "Secretary General of the City of Bujumbura",
+        }[locale]}</p>
+        <br/>
+        <p class="p-medium">◉ ${{
+            fr: "Député National pour une durée de 12 ans à la Mairie de Bujumbura",
+            en: "National Deputy for a period of 12 years at the Bujumbura Town Hall",
+        }[locale]}</p>
+        <br/>
+        <p class="p-medium">◉ ${{
+            fr: "Ambassadeur à Kinshasa RDC",
+            en: "Ambassador in Kinshasa DRC",
+        }[locale]}</p>
+        <br/>
+        <p class="p-medium">◉ ${{
+            fr: "Notaire depuis l'an 2004 jusqu'à ce jour",
+            en: "Notary since the year 2004 until today",
+        }[locale]}</p>
+    </div>
 </div>
     `;
 }

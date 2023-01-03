@@ -1,4 +1,4 @@
-import { NavBar, Box, AboutUs, WhyUs, WhenUs, ContactUsHeader, Footer, OurServices } from './components.js';
+import { NavBar, Box, AboutUs, WhyUs, WhenUs, ContactUsHeader, Footer, OurServices, Resume } from './components.js';
 
 const homePath = localStorage.getItem('home') ?? '/'
 
@@ -20,6 +20,7 @@ function insertTemplates({ locale = 'fr' }) {
     innerHTML('#contact-us-header', ContactUsHeader(locale, homePath));
     innerHTML('#footer-closure', Footer(locale, homePath));
     innerHTML('#our-services', OurServices(locale, homePath));
+    innerHTML('#resume', Resume(locale, homePath));
 }
 
 insertTemplates({ locale: 'en' });
