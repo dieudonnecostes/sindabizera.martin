@@ -798,6 +798,10 @@ nav a {
     background-color: var(--card);
 }
 
+#resume .duo-right{
+    padding: 2rem;
+}
+
 
 @media screen and (max-width : 1024px) {
     .nav-header {

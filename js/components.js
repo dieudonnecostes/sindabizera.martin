@@ -3,7 +3,7 @@ export const NavBar = (locale, homePath) => {
         <a href='${homePath}' class="logo-named">
             <h1 class="large-subtitle logoName">${{
             fr: "Notaire", en: "Notary"
-        }[locale]} Martin Sindabizera</h1>
+        }[locale]} Martin SINDABIZERA</h1>
         </a>
         <div class="navbar-actions flex">
             <div class="contextual-arrow" id="c-m-about">
@@ -40,8 +40,11 @@ export const NavBar = (locale, homePath) => {
 export const Box = (locale, homePath) => {
     return `
     <img src="https://dpictures.s3.amazonaws.com/pv-d/20230103_105622.jpg"
-    alt="Notaire Sindabizera Martin" />
-    <h1 class="headline1">Martin Sindabizera</h1>
+    alt="Notaire Martin SINDABIZERA" />
+    <h1 class="headline1">${{
+        fr: "Maître",
+        en: "Master",
+    }[locale]} Martin SINDABIZERA</h1>
     <p class="large-subtitle">${{
             fr: "Pour l'authenticité de vos actes",
             en: "For the authenticity of your deeds",
@@ -222,8 +225,8 @@ export const ContactUsHeader = (locale, homePath) => {
 export const Footer = (locale, homePath) => {
     return `
     <p>${{
-            fr: "© Notaire Martin Sindabizera. Tous les droits sont réservés",
-            en: "© Notary Martin Sindabizera. All rights reserved",
+            fr: "© Notaire Martin SINDABIZERA. Tous les droits sont réservés",
+            en: "© Notary Martin SINDABIZERA. All rights reserved",
         }[locale]}</p>
     <p>${{
             fr: "Réalisation par",
@@ -291,7 +294,7 @@ export const Resume = (locale, homePath) => {
     return `
     <div class="duo">
     <div class="duo-left">
-        <img class="img-right notaire-img" alt="Photo du Notaire Martin SIndabizera" src="https://dpictures.s3.amazonaws.com/pv-d/20230103_105622.jpg"/>
+        <img class="img-right notaire-img" alt="Photo du Notaire Martin SINDABIZERA" src="https://dpictures.s3.amazonaws.com/pv-d/20230103_105622.jpg"/>
     </div>
     <div class="duo-right">
         <h1 class="large-title">${{
