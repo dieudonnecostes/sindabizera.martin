@@ -131,8 +131,8 @@ export const WhyUs = (locale, homePath) => {
             en: "Tax collection",
         }[locale]}</h1>
             <p>${{
-            fr: "Il collecte l'impôt dû à l'Etat à l'occasion des faits, ce qui lui permet de contrôler le montant réclamé",
-            en: "He collects the tax due to the State on the occasion of the facts, which allows him to control the amount claimed",
+            fr: "Il collecte l'impôt dû à l'Etat à l'occasion de la passation des actes.",
+            en: "He collects the tax due to the State on the occasion of the signing of the deeds.",
         }[locale]}</p>
         </div>
         <div class="bordered-item">
@@ -308,8 +308,8 @@ export const Resume = (locale, homePath) => {
         }[locale]}:</p>
         <br/><br/>
         <p class="p-medium">◉ ${{
-            fr: "Magistrat à la Mairie de Bujumbura",
-            en: "Magistrate in Bujumbura City Hall",
+            fr: "Magistrat à Bujumbura",
+            en: "Magistrate in Bujumbura",
         }[locale]}</p>
         <br/>
         <p class="p-medium">◉ ${{
@@ -318,8 +318,8 @@ export const Resume = (locale, homePath) => {
         }[locale]}</p>
         <br/>
         <p class="p-medium">◉ ${{
-            fr: "Député National pour une durée de 12 ans à la Mairie de Bujumbura",
-            en: "National Deputy for a period of 12 years at the Bujumbura Town Hall",
+            fr: "Député National pendant 12 ans dans la circonscription de Bujumbura-Mairie",
+            en: "National deputy for 12 years in the constituency of Bujumbura-Mairie",
         }[locale]}</p>
         <br/>
         <p class="p-medium">◉ ${{
