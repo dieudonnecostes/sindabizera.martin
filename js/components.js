@@ -42,8 +42,8 @@ export const Box = (locale, homePath) => {
     <img src="https://dpictures.s3.amazonaws.com/pv-d/20230103_105622.jpg"
     alt="Notaire Martin SINDABIZERA" />
     <h1 class="headline1">${{
-        fr: "Maître",
-        en: "Master",
+        fr: "Notaire",
+        en: "Notary",
     }[locale]} Martin SINDABIZERA</h1>
     <p class="large-subtitle">${{
             fr: "Pour l'authenticité de vos actes",
